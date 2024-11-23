@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Píses</title>
+    <style>
+      body {
+        background: greenyellow;
+        display: flex;
+        justify-content: center;
+        font: normal 15pt arial;
+      }
+      main {
+        background: white;
+        width: 450px;
+        height: 450px;
+      }
+      h1 {
+        padding: 5px;
+        text-align: center;
+        margin: 10px;
+      }
+      p {
+        padding: 5px;
+        margin: 0px;
+      }
+      input {
+        text-align: center;
+        background: lightgray;
+        padding: 5px;
+        margin: 5px;
+        width: 70px;
+      }
+      div#res {
+        font: bolder;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>De qual país você é?</h1>
+
+      <p>
+        Qual o seu País de origem?
+
+        <input type="text" name="pais" id="pais" />
+      </p>
+      <p>
+        Verifique seu estatos morando no Brasil
+
+        <input type="button" value="Verificar" onclick="verificar()" />
+      </p>
+      <div id="res">Resultado</div>
+    </main>
+
+    <script>
+      function verificar() {
+        var pais = document.querySelector('input#pais')
+
+        var res = document.querySelector('div#res')
+
+        if (pais.value === 'Brasil') {
+          res.innerHTML = `<p>Você é <strong>Brasileiro</strong></p>`
+        } else {
+          res.innerHTML = `<p>Você é <strong>Estrangeiro</strong></p>`
+        }
+      }
+    </script>
+  </body>
+</html>
