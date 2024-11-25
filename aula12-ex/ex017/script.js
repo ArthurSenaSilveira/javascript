@@ -8,14 +8,13 @@ function carregar() {
     //Bom dia!
     img.src = 'manha.png'
     document.body.style.background = '#DBCED7'
-  
-} else if (hora >= 12 && hora < 18) {
+  } else if (hora >= 12 && hora < 18) {
     //Boa tarde!
     img.src = 'tarde.png'
     document.body.style.background = '#EE7086'
-} else {
+  } else {
     //Boa noite
     img.src = 'noite.png'
     document.body.style.background = '#07213F'
-}
+  }
 }
