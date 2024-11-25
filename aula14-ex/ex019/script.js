@@ -13,12 +13,12 @@ function clicar() {
 
   if (isNaN(inicio) || isNaN(fim) || isNaN(passo) || passo <= 0) {
     alert('[ERRO], Por Favor, Insira Números válidos.')
-    return;
+    return
   }
-  let resultado = "";
+  let resultado = ''
   for (let i = inicio; i <= fim; i += passo) {
-    resultado += `👈 ${i}`;
+    resultado += `👈 ${i}`
   }
-  resultado += "🏁"
-  document.querySelector('#res').innerHTML = resultado;
+  resultado += '🏁'
+  document.querySelector('#res').innerHTML = resultado
 }
