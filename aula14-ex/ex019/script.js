@@ -5,20 +5,21 @@ function clicar() {
 
   var passo = document.querySelector('input#passo').value
 
-  inicio = Number(inicio)
+  var res = document.querySelector('input#res')
 
-  fim = Number(fim)
+  //inicio = Number(inicio)
 
-  passo = Number(passo)
+  //fim = Number(fim)
+
+  //passo = Number(passo)
 
   if (isNaN(inicio) || isNaN(fim) || isNaN(passo) || passo <= 0) {
     alert('[ERRO], Por Favor, Insira Números válidos.')
-    return
+  } else {
+    res.innerHTML = 'Contando'
+    var i = Number(inicio.value)
+    var f = Number(fim.value)
+    var p = Number(passo.value)
+    if (i < f) {}
   }
-  let resultado = ''
-  for (let i = inicio; i <= fim; i += passo) {
-    resultado += `👈 ${i}`
-  }
-  resultado += '🏁'
-  document.querySelector('#res').innerHTML = resultado
 }
