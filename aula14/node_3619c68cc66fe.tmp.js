@@ -1,8 +1,7 @@
-var soma = 0
-for (let i = 1; i <= 5; i++) {
-  soma += i
+for (i = 1; i <= 5; i + i) {
+  console.log(i)
 }
-console.log(soma)
+
 /*
 console.log('Vai começar')
 for (var c = 1; c <= 4; c++) {
