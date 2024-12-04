@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio da lampada</title>
     <style>
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            display: flex;
-            flex-flow: column nowrap;
-            background-color: lightcyan;
-        }
-        section {
-            justify-items: center;
-            text-align: center;
-        }
-        button {
-            padding: 10px;
-            border-radius: 10px;
-            
-        }
-        img {
-            padding: 10px;
-        }
-        h1 {
-            font-size: 1.8em;
-        }
-        p {
-            padding: 0px 10px;
-            font-size: 1.2em;
-        }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: lightcyan;
+      }
+      section {
+        justify-items: center;
+        text-align: center;
+      }
+      button {
+        padding: 10px;
+        border-radius: 10px;
+      }
+      img {
+        padding: 10px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      p {
+        padding: 0px 10px;
+        font-size: 1.2em;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <h1>Desafio da lampada</h1>
-        <p>JavaScript pode alterar valores de atributos HTML.</p>
-        <p>Neste caso, o JavaScript altera o valor do atributo src (fonte) de uma imagem.</p>
-        <button onclick = "document.getElementById('minha-imagem').src='../desafio-lampada/imagens/lampada-acessa.gif'">Acender a luz</button>
-        <img src="../desafio-lampada/imagens/lampada.gif" alt="imagem de uma lampada apagada" id="minha-imagem">
-        <button onclick="document.getElementById('minha-imagem').src='../desafio-lampada/imagens/lampada.gif'">Apagar a luz</button>
+      <h1>Desafio da lampada</h1>
+      <p>JavaScript pode alterar valores de atributos HTML.</p>
+      <p>
+        Neste caso, o JavaScript altera o valor do atributo src (fonte) de uma
+        imagem.
+      </p>
+      <button
+        onclick="document.getElementById('minha-imagem').src='../desafio-lampada/imagens/lampada-acessa.gif'"
+      >
+        Acender a luz
+      </button>
+      <img
+        src="../desafio-lampada/imagens/lampada.gif"
+        alt="imagem de uma lampada apagada"
+        id="minha-imagem"
+      />
+      <button
+        onclick="document.getElementById('minha-imagem').src='../desafio-lampada/imagens/lampada.gif'"
+      >
+        Apagar a luz
+      </button>
     </section>
-</body>
+  </body>
 </html>
