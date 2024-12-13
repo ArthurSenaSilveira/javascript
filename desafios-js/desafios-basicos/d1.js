@@ -1,6 +1,5 @@
 function desafio1(a, b, c, d, e, f) {
-    console.log((((a + b) - c) * d / e) ** f)
-    return
+    return (((a + b) - c) * d / e) **f
 }
 
 console.log(desafio1(6, 5, 4, 3, 2, 1));

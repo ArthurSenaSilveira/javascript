@@ -1,14 +1,13 @@
 function desafio2(text, flag = 'start') {
-    if (flag == 'start') {
-        console.log(text.slice(0, 3))
-    } else {
-        console.log(text.slice(-3))
+    return text.length < 3 ? text : flag === "start" ? text.slice(0, 3) : text.slice(-3)
+    
+    /* if(text.length < 3) {
+        return text;
     }
-    if (text < 3) {
-        (console.log('text'))
-        return
+    if(flag === "start") {
+        return text.slice(0, 3)
     }
-    return
+    return text.slice(-3) */
 }
 
 console.log(desafio2("abcdefg", "start"));
