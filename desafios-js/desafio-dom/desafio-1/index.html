@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tabuada">
+        <h1>tabuada</h1>
+        <input type="text" class="num" name="num" id="num" placeholder="digite um número">
+        <button onclick="tabuada()">Resultado</button>
+    </div>
+    <div>
+        <textarea name="Resultado" id="resultado"></textarea>
+    </div>
+    <script>
+        let button = document.querySelector("button")
+        function tabuada() {
+            let resultado = document.querySelector("textarea")
+            let num = document.querySelector("input").value
+            num = Number(num)
+            for( let i = 0; i <= 10; i++) {
+                resultado.innerHTML += `${num} x ${i} = ${num * i}`
+            }
+        }
+    </script>
+</body>
+</html>
