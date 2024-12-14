@@ -1,0 +1,35 @@
+body {
+    background-color: #ccc;
+    height: 95vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 90vw;
+    padding: 20px;
+    border-radius: 0px 10px 10px 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+input, button {
+    margin: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 120px;
+}   
+button {
+    width: 100px;
+}
+@media screen and (min-width: 668px) {
+    div {
+        width: 330px;
+    }
+}
