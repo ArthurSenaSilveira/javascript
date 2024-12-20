@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Lista com Negrito Dinâmico</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo para negrito */
+        .negrito {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+        <!-- Campo de entrada onde o usuário digita o texto -->
+        <input type="text" id="inputNome" placeholder="Digite um nome para buscar">
+        
+        <!-- Lista ordenada com os nomes -->
+        <ol id="listaNomes">
+            <li>João</li>
+            <li>Claudio</li>
+            <li>Marcio</li>
+        </ol>
+    </div>
+
+    <script>
+        // Passo 1: Captura o campo de input e a lista de nomes
+        const inputNome = document.querySelector("#inputNome");  // O campo de entrada onde o usuário digita
+        const listaNomes = document.querySelectorAll("#listaNomes li");  // Todos os itens da lista <ol>
+
+        // Passo 2: Adiciona um evento de input no campo de entrada
+        inputNome.addEventListener("input", function() {
+            // Passo 3: Recupera o valor digitado no campo de input
+            const valorDigitado = inputNome.value.toLowerCase();  // Converte para minúsculas para facilitar a comparação
+
+            // Passo 4: Loop para percorrer todos os itens da lista
+            listaNomes.forEach(function(item) {
+                // Passo 5: Verifica se o nome do item começa com o valor digitado
+                if (item.textContent.toLowerCase().includes(valorDigitado)) {
+                    // Passo 6: Se o nome conter o valor digitado, aplica o negrito
+                    item.classList.add("negrito");  // Adiciona a classe que define o negrito
+                } else {
+                    // Passo 7: Se o nome não corresponder, remove o negrito
+                    item.classList.remove("negrito");  // Remove a classe de negrito
+                }
+            });
+        });
+    </script>
+</body>
+</html>

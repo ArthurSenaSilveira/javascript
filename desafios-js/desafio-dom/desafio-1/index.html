@@ -13,16 +13,16 @@
         <button onclick="tabuada()">Resultado</button>
     </div>
     <div>
-        <textarea name="Resultado" id="resultado"></textarea>
+        <div name="Resultado" id="resultado"></div>
     </div>
     <script>
         let button = document.querySelector("button")
         function tabuada() {
-            let resultado = document.querySelector("textarea")
+            let resultado = document.querySelector("div")
             let num = document.querySelector("input").value
             num = Number(num)
             for( let i = 0; i <= 10; i++) {
-                resultado.innerHTML += `${num} x ${i} = ${num * i}`
+                resultado.innerHTML += `<p>${num} x ${i} = ${num * i}</p>`
             }
         }
     </script>
